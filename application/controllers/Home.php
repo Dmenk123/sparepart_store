@@ -23,14 +23,15 @@ class Home extends CI_Controller {
 		}
 		
 		$data = array(
-			'content_slider' => 'homepage/view_homepage_slider',
-			'content_advantage' => 'homepage/view_homepage_advantage',
-			'content_hot' => 'homepage/view_homepage_hot',
-			'js' => 'homepage/jsHomepage',
-			'count_kategori' => $count_kategori,
-			'menu_navbar' => $menu_navbar,
-			'submenu' => $submenu,
-			'menu_select_search' => $menu_select_search
+			'new_product' => 'template/components/new_product',
+			'promo' => 'template/components/promo',
+			'top_selling' => 'template/components/top_selling',
+			'content' => 'template/components/top_selling',
+			// 'js' => 'homepage/jsHomepage',
+			// 'count_kategori' => $count_kategori,
+			// 'menu_navbar' => $menu_navbar,
+			// 'submenu' => $submenu,
+			// 'menu_select_search' => $menu_select_search
 		);
 
 		if ($this->session->userdata('id_user') == !null) {
